@@ -136,10 +136,10 @@
      }
    }
   }
-  function action_policies(name, eventRuleID){
+  function action_policies(name, eventRuleID,email){
     var req_actionp = new XMLHttpRequest();
     var url_action_policy = 'https://liveobjects.orange-business.com/api/v0/event2action/actionPolicies';
-    var reqqq = '{"name": "'+name+'","enabled": true,    "triggers": { "eventRuleIds": ["'+eventRuleID+'"]},"actions": { "emails": [{"to": ["'+email+'"], "subjectTemplate": "State change for {{stateKey}}", "contentTemplate": "{{stateKey}} change from state {{previousState}} to state {{newState}} at {{timestamp}}"}] }}'
+    var reqqq = '{"name": "'+name+'","enabled": true,    "triggers": { "eventRuleIds": ["'+eventRuleID+'"]},"actions": { "emails": [{"to": ["'+email+'"], "subjectTemplate": "State change ", "contentTemplate": "Live Objects warns you that your rule '+name+' was triggered."}] }}'
     req_actionp.open('POST', url_action_policy, true);
     req_actionp.setRequestHeader('Accept', 'application/json');
     req_actionp.setRequestHeader('Content-type', 'application/json');
