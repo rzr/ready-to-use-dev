@@ -1,9 +1,9 @@
 # Simulate a MQTT device with Eclipse #
 
-## Sending & receiving commands ##
+## Sending & retrieving data ##
 SampleLO https://github.com/fragae75/SampleLO
 
-## Sending & receiving commands ##
+## Sending & confirm commands ##
 SampleLOConsumeCommand https://github.com/fragae75/SampleLOConsumeCommand
 
 ## Changing a configuration ##
