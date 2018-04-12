@@ -1,10 +1,16 @@
-# Simulate a MQTT device with Eclipse #
+# Simulate with Eclipse a MQTT device and a business application that collect MQTT data #
 
-## Sending & retrieving data ##
+## Send data as a MQTT device ##
+SampleLOSendData https://github.com/fragae75/SampleLOSendData
+
+## Collect MQTT data from Live Objects as a business application ##
+SampleLOSubscribeData https://github.com/fragae75/SampleLOSubscribeData
+
+## Send & retrieving data : merging of SampleLOSendData + SampleLOSubscribeData ##
 SampleLO https://github.com/fragae75/SampleLO
 
-## Sending & confirm commands ##
+## Collect/answer commands from Live Objects as a MQTT device ##
 SampleLOConsumeCommand https://github.com/fragae75/SampleLOConsumeCommand
 
-## Changing a configuration ##
+##  Collect/answer configuration updates from Live Objects as a MQTT device ##
 SampleLOHandleConfig https://github.com/fragae75/SampleLOHandleConfig
