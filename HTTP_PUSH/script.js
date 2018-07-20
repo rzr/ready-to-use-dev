@@ -62,10 +62,7 @@ function getDevices(){ /* FUNCTION to get the devices from the API_KEY */
 /* FUNCTION to create the acction policies --> HTTP PUSH */
 
 function push_http(name,url,head1,headValue,jsonp){
-    var last_char = url.slice(-1);
-    if (last_char === '/') { // verify if the last character of the url is an '/'
-      url = url;
-    }else {
+    if (url.slice(-1) !== '/') { // verify if the last character of the url is an '/'
       url = url+'/';
     }
     var sizeHeader = Object.keys(contentHead).length;
